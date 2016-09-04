@@ -30,7 +30,11 @@ window.onload = function() {
     var tb = document.getElementById("studentTable");
        console.log(tb);
     
-
+    
+    var deleteEverything = function () {
+    tableBody.innerHTML = "";
+    students.length = 0;
+    };
 
     var populateTable = function() {
         tb.innerHTML = "";
@@ -67,6 +71,7 @@ window.onload = function() {
 //    students.splice(del, 1);
 //    populateTable();
 //    };
+
 
 };
 
