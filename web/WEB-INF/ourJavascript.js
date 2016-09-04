@@ -23,17 +23,11 @@ window.onload = function() {
         "Category": "Yellow"
     }];
 
-    //    for (var i = 0; i < students.length; i++) {
-    //        console.log(students[i]);
-    //    }
-
     var tb = document.getElementById("studentTable");
-       console.log(tb);
-    
     
     var deleteEverything = function () {
-    tableBody.innerHTML = "";
-    students.length = 0;
+        tableBody.innerHTML = "";
+        students.length = 0;
     };
 
     var populateTable = function() {
@@ -44,15 +38,14 @@ window.onload = function() {
             row.insertCell(1).innerHTML = students[i].email;
             row.insertCell(2).innerHTML = students[i].phone;
             row.insertCell(3).innerHTML = students[i].Category;
+            row.insertCell(4).innerHTML = "<button id=" + i + "btn\" class=\"btn btn-danger\">Delete</button>";
         }
     };
 
     populateTable();
     
-//    console.log(students);
-
     var studentform = document.getElementById("studentform");
-    //console.log(studentform);
+    
     studentform.onsubmit = function(event) {
         event.preventDefault();
         var student = {};
@@ -62,8 +55,10 @@ window.onload = function() {
         student.category = studentform.elements["category"].value;
         students.push(student);
         populateTable();
-        var fullNameField = document.getElementById("full_name");
-        
+        studentform.elements["full_name"].value = "";
+        studentform.elements["email"].value = "";
+        studentform.elements["phone"].value = "";
+        studentform.elements["category"].value = "| Choose category |";
     };
 
     // remove student
