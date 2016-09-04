@@ -66,6 +66,7 @@ window.onload = function() {
     };
 
     // remove student
+    var lastId = [];
     var removeStudent = function (id) {
     var del = id.substring(0,1);    
     students.splice(del, 1);
