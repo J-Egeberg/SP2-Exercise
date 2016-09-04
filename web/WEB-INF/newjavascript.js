@@ -39,10 +39,13 @@ studentform.onsubmit = function(event){
 };
 
 // remove student
-function myFunction() {
+function deleteStudent() {
     document.getElementById("myTable").deleteRow(0);
 }
 
 //remove all student
+function deleteAllStudents() {
+    document.getElementById("myTable").deleteRow(0);
+}
 
 };
