@@ -1,35 +1,33 @@
 window.onload = function() {
 
-    var students = [
-        {
-            "name": "Jens",
-            "email": "coilx14396@hotmail.com",
-            "phone": "12345678",
-            "Category": "red"
-        }, {
-            "name": "Thomas",
-            "email": "x14396@hotmail.com",
-            "phone": "12345678",
-            "Category": "yellow"
-        }, {
-            "name": "Kim",
-            "email": "coi96@hotmail.com",
-            "phone": "12345678",
-            "Category": "green"
-        }, {
-            "name": "Jonas",
-            "email": "scheldejonas@gmail.com",
-            "phone": "20772194",
-            "Category": "blue"
-        }
-    ];
-    
-//    for (var i = 0; i < students.length; i++) {
-//        console.log(students[i]);
-//    }
+    var students = [{
+        "name": "Jens",
+        "email": "coilx14396@hotmail.com",
+        "phone": "12345678",
+        "Category": "red"
+    }, {
+        "name": "Thomas",
+        "email": "x14396@hotmail.com",
+        "phone": "12345678",
+        "Category": "yellow"
+    }, {
+        "name": "Kim",
+        "email": "coi96@hotmail.com",
+        "phone": "12345678",
+        "Category": "green"
+    }, {
+        "name": "Jonas",
+        "email": "scheldejonas@gmail.com",
+        "phone": "20772194",
+        "Category": "blue"
+    }];
+
+    //    for (var i = 0; i < students.length; i++) {
+    //        console.log(students[i]);
+    //    }
 
     var tb = document.getElementById("test");
-//    console.log(tb);
+    //    console.log(tb);
 
     var populateTable = function() {
         tb.innerHTML = "";
@@ -41,9 +39,9 @@ window.onload = function() {
             row.insertCell(3).innerHTML = students[i].Category;
         }
     };
-    
+
     populateTable();
-    
+
     var studentform = document.getElementById("studentform");
     //console.log(studentform);
     studentform.onsubmit = function(event) {
@@ -64,17 +62,16 @@ window.onload = function() {
         document.getElementById("myTable").deleteRow(0);
     }
 
-// remove student
-function deleteStudent() {
-    document.getElementById("myTable").deleteRow(0);
-}
-
-//remove all student
-function deleteAllStudents() {
-    for (var i = 0; i < students.length; i++) {
-        document.getElementById("myTable").deleteRow(i);
+    // remove student
+    function deleteStudent() {
+        document.getElementById("myTable").deleteRow(0);
     }
-};
 
+    //remove all student
+    function deleteAllStudents() {
+        for (var i = 0; i < students.length; i++) {
+            document.getElementById("myTable").deleteRow(i);
+        }
+    };
 
 };
