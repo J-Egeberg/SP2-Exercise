@@ -62,6 +62,8 @@ window.onload = function() {
         student.category = studentform.elements["category"].value;
         students.push(student);
         populateTable();
+        var fullNameField = document.getElementById("full_name");
+        
     };
 
     // remove student
