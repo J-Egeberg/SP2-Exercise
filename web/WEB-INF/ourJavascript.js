@@ -31,7 +31,7 @@
     
 
 
-    var populateTable = function(tb) {
+    var populateTable = function() {
         tb.innerHTML = "";
         for (var i = 0; i < students.length; i++) {
             var row = tb.insertRow(i);
@@ -60,12 +60,12 @@
     };
 
     // remove student
-    var lastId = [];
-    var removeStudent = function (id) {
-    var del = id.substring(0,1);    
-    students.splice(del, 1);
-    populateTable();
-    };
+//    var lastId = [];
+//    var removeStudent = function (id) {
+//    var del = id.substring(0,1);    
+//    students.splice(del, 1);
+//    populateTable();
+//    };
 
 
 
