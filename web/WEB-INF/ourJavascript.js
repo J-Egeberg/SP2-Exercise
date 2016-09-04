@@ -1,7 +1,5 @@
 /* global tableBody */
 
-window.onload = function() {
-
     var students = [{
         "name": "Jens",
         "email": "coilx14396@hotmail.com",
@@ -29,16 +27,11 @@ window.onload = function() {
     //    }
 
     var tb = document.getElementById("studentTable");
-    //    console.log(tb);
+       console.log(tb);
     
-        //remove all student
-    var deleteEverything = function () {
-        tableBody.innerHTML = "";
-        students.length = 0;
-    };
 
 
-    var populateTable = function() {
+    var populateTable = function(tb) {
         tb.innerHTML = "";
         for (var i = 0; i < students.length; i++) {
             var row = tb.insertRow(i);
@@ -76,4 +69,3 @@ window.onload = function() {
 
 
 
-};
