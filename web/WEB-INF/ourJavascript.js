@@ -41,20 +41,27 @@ window.onload = function() {
     };
 
     populateTable();
+    
+//    console.log(students);
 
     var studentform = document.getElementById("studentform");
     //console.log(studentform);
     studentform.onsubmit = function(event) {
         event.preventdefault();
-        //console.log(studentForm.elements["full_name"].value);
         var student = {};
+        
         console.log("Hello");
+        console.log(studentForm.elements["full_name"].value);
+        
         student.name = studentform.elements["full_name"].value;
         student.email = studentform.elements["email"].value;
         student.phone = studentform.elements["phone"].value;
         student.category = studentform.elements["category"].value;
         //students.push(student);
-        students.push([student.name], [student.email], [student.phone], [student.category]);
+        students.push(student);
+        
+        console.log(students);
+        
         populateTable();
     };
 
