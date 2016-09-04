@@ -45,7 +45,9 @@ function deleteStudent() {
 
 //remove all student
 function deleteAllStudents() {
-    document.getElementById("myTable").deleteRow(0);
-}
+        for (var i = 0; i < students.length; i++) {
+    document.getElementById("myTable").deleteRow(i);     
+        }
+        };
 
 };
