@@ -1,24 +1,31 @@
 window.onload = function() {
 
-    var students = [{
-        "name": "Jens",
-        "email": "coilx14396@hotmail.com",
-        "phone": "12345678",
-        "Category": "red"
-    }, {
-        "name": "Thomas",
-        "email": "x14396@hotmail.com",
-        "phone": "12345678",
-        "Category": "yellow"
-    }, {
-        "name": "Kim",
-        "email": "coi96@hotmail.com",
-        "phone": "12345678",
-        "Category": "green"
-    }];
-    //for (var i = 0; i < students.length; i++) {
-    //    console.log(students[i]);
-    //}
+    var students = [
+        {
+            "name": "Jens",
+            "email": "coilx14396@hotmail.com",
+            "phone": "12345678",
+            "Category": "red"
+        }, {
+            "name": "Thomas",
+            "email": "x14396@hotmail.com",
+            "phone": "12345678",
+            "Category": "yellow"
+        }, {
+            "name": "Kim",
+            "email": "coi96@hotmail.com",
+            "phone": "12345678",
+            "Category": "green"
+        }, {
+            "name": "Jonas",
+            "email": "scheldejonas@gmail.com",
+            "phone": "20772194",
+            "Category": "blue"
+        }
+    ];
+    for (var i = 0; i < students.length; i++) {
+        console.log(students[i]);
+    }
 
     var tb = document.getElementById("test");
     console.log(tb);
