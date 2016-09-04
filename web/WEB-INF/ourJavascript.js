@@ -1,3 +1,5 @@
+/* global tableBody */
+
 window.onload = function() {
 
     var students = [{
@@ -28,6 +30,13 @@ window.onload = function() {
 
     var tb = document.getElementById("studentTable");
     //    console.log(tb);
+    
+        //remove all student
+    var deleteEverything = function () {
+        tableBody.innerHTML = "";
+        students.length = 0;
+    };
+
 
     var populateTable = function() {
         tb.innerHTML = "";
@@ -73,11 +82,6 @@ window.onload = function() {
     populateTable();
     };
 
-    //remove all student
-    function deleteAllStudents() {
-        for (var i = 0; i < students.length; i++) {
-            document.getElementById("myTable").deleteRow(i);
-        }
-    };
+
 
 };
