@@ -48,10 +48,11 @@ window.onload = function() {
         event.preventdefault();
         //console.log(studentForm.elements["full_name"].value);
         var student = {};
+        console.log("Hello");
         student.name = studentform.elements["full_name"].value;
         student.email = studentform.elements["email"].value;
         student.phone = studentform.elements["phone"].value;
-        student.category = studentform.elements["Category"].value;
+        student.category = studentform.elements["category"].value;
         //students.push(student);
         students.push([student.name], [student.email], [student.phone], [student.category]);
         populateTable();
