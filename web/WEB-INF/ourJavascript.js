@@ -26,7 +26,7 @@ window.onload = function() {
     //        console.log(students[i]);
     //    }
 
-    var tb = document.getElementById("test");
+    var tb = document.getElementById("studentTable");
     //    console.log(tb);
 
     var populateTable = function() {
