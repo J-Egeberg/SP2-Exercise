@@ -23,12 +23,13 @@ window.onload = function() {
             "Category": "blue"
         }
     ];
-    for (var i = 0; i < students.length; i++) {
-        console.log(students[i]);
-    }
+    
+//    for (var i = 0; i < students.length; i++) {
+//        console.log(students[i]);
+//    }
 
     var tb = document.getElementById("test");
-    console.log(tb);
+//    console.log(tb);
 
     var populateTable = function() {
         tb.innerHTML = "";
@@ -40,14 +41,16 @@ window.onload = function() {
             row.insertCell(3).innerHTML = students[i].Category;
         }
     };
+    
     populateTable();
+    
     var studentform = document.getElementById("studentform");
     //console.log(studentform);
     studentform.onsubmit = function(event) {
         event.preventdefault();
         //console.log(studentForm.elements["full_name"].value);
         var student = {};
-        student.name = studentform.elements[" full_name"].value;
+        student.name = studentform.elements["full_name"].value;
         student.email = studentform.elements["email"].value;
         student.phone = studentform.elements["phone"].value;
         student.category = studentform.elements["Category"].value;

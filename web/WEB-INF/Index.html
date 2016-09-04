@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
 
 <head>
-    <title>TODO supply a title</title>
+    <title>CPHBusiness | Students</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -86,24 +86,27 @@ and open the template in the editor.
         <div class="row">
             <div class="col-sm-3">
                 <h1>Enter New Student</h1>
-                <form id="studentForm" action="#" method="POST">
+                <form id="studentform" action="#" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="full_name">
+                        <input type="text" class="form-control" placeholder="Full name">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="email">
+                        <input type="text" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="phone">
+                        <input type="text" class="form-control" placeholder="Phone">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Category">
                     </div>
-                    <!--           <select>
-                <option value="hard">red</option>
-                <option value="medium">yellow</option>
-                <option value="easy">green</option>
-            </select>-->
+                    <div class="form-group">
+                        <select class="form-control" id="category">
+                            <option>| Choose category |</option>
+                            <option>Green</option>
+                            <option>Yellow</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-default" name=="submit" value="submit">
                     </div>
