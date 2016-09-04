@@ -19,7 +19,7 @@ window.onload = function() {
         "name": "Jonas",
         "email": "scheldejonas@gmail.com",
         "phone": "20772194",
-        "Category": "blue"
+        "Category": "Yellow"
     }];
 
     //    for (var i = 0; i < students.length; i++) {
@@ -66,14 +66,11 @@ window.onload = function() {
     };
 
     // remove student
-    function deleteStudent() {
-        document.getElementById("myTable").deleteRow(0);
-    }
-
-    // remove student
-    function deleteStudent() {
-        document.getElementById("myTable").deleteRow(0);
-    }
+    var removeStudent = function (id) {
+    var del = id.substring(0,1);    
+    students.splice(del, 1);
+    populateTable();
+    };
 
     //remove all student
     function deleteAllStudents() {
