@@ -1,4 +1,5 @@
 /* global tableBody */
+window.onload = function() {
 
     var students = [{
         "name": "Jens",
@@ -67,5 +68,5 @@
 //    populateTable();
 //    };
 
-
+};
 
